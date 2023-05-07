@@ -25,7 +25,9 @@ rice = st.number_input("Enter the amount of rice (in grams):", min_value=0.0, va
 fish = st.number_input("Enter the amount of fish (in grams):", min_value=0.0, value=0.0, step=0.1)
 
 if st.button("Calculate"):
-    rice_used, fish_used, supplement_used, oil_used = calculate_ingredient_amounts(rice, fish)
+    with st.spinner("Thinking..."
+        rice_used, fish_used, supplement_used, oil_used = calculate_ingredient_amounts(rice, fish)
+    st.write("When in doubt, go over by 1 -- not under")
     st.write(f"Rice used: {rice_used:d} grams")
     st.write(f"Fish used: {fish_used:d} grams")
     st.write(f"Supplement used: {supplement_used:d} grams")
