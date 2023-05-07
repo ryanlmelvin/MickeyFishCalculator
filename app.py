@@ -19,7 +19,7 @@ def calculate_ingredient_amounts(rice, fish):
 
     return rice_used, fish_used, supplement_used, oil_used
 
-st.title("Ingredient Optimizer")
+st.title("Mickéy Fîsh")
 
 rice = st.number_input("Enter the amount of rice (in grams):", min_value=0.0, value=0.0, step=0.1)
 fish = st.number_input("Enter the amount of fish (in grams):", min_value=0.0, value=0.0, step=0.1)
