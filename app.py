@@ -2,10 +2,10 @@ import streamlit as st
 import numpy as np
 
 def calculate_ingredient_amounts(rice, fish):
-    rice_ratio = 46.5
-    fish_ratio = 12.3
-    supplement_ratio = 1.08
-    oil_ratio = 1
+    rice_ratio = 790
+    fish_ratio = 209
+    supplement_ratio = 18.44
+    oil_ratio = 17
 
     rice_multiplier = rice / rice_ratio
     fish_multiplier = fish / fish_ratio
