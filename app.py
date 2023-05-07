@@ -28,3 +28,15 @@ def calculate_ingredient_amounts(rice, fish):
             min_multiplier_int -= 1
 
     return rice_used, fish_used, supplement_used, oil_used
+
+st.title("Mickéy Fîsh")
+
+rice = st.number_input("Enter the amount of rice (in grams):", min_value=0.0, value=0.0, step=0.1)
+fish = st.number_input("Enter the amount of fish (in grams):", min_value=0.0, value=0.0, step=0.1)
+
+if st.button("Calculate"):
+    rice_used, fish_used, supplement_used, oil_used = calculate_ingredient_amounts(rice, fish)
+    st.write(f"Rice used: {rice_used:.2f} grams")
+    st.write(f"Fish used: {fish_used:.2f} grams")
+    st.write(f"Supplement used: {supplement_used:.2f} grams")
+    st.write(f"Oil used: {oil_used:.2f} grams")
