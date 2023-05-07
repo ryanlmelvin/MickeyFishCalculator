@@ -21,13 +21,13 @@ def calculate_ingredient_amounts(rice, fish):
         supplement_used = supplement_ratio * min_multiplier_int
         oil_used = oil_ratio * min_multiplier_int
 
-        if (rice_used.is_integer() and fish_used.is_integer() and
-            supplement_used.is_integer() and oil_used.is_integer()):
+        if (int(rice_used) == rice_used and int(fish_used) == fish_used and
+            int(supplement_used) == supplement_used and int(oil_used) == oil_used):
             break
         else:
             min_multiplier_int -= 1
 
-    return rice_used, fish_used, supplement_used, oil_used
+    return int(rice_used), int(fish_used), int(supplement_used), int(oil_used)
 
 st.title("Mickéy Fîsh")
 
